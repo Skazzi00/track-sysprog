@@ -227,6 +227,8 @@ void sort_files(int size, char *files[]) {
     printf("%d ", arrays[0].data[i]);
   }
   printf("\n");
+  free(arrays[0].data);
+  free(arrays);
 }
 
 int main(int argc, char *argv[]) {
