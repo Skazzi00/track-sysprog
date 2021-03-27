@@ -44,7 +44,7 @@ my_coroutine(int id)
 		if (swapcontext(&uctx_func2, &uctx_func1) == -1)
 			handle_error("swapcontext");
 	}
-	printf("func%d: returning\n", id);
+	printf("func%d:  returning\n", id);
 }
 
 /**
