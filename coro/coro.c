@@ -1,11 +1,10 @@
 #include <stdlib.h>
-#include <unistd.h>
 #include <string.h>
 #include <ucontext.h>
 #include <signal.h>
+#include <stdint.h>
 
 #include "coro.h"
-
 static void free_coro(coro_t *coro) {
   free(coro->stack);
   free(coro->args);

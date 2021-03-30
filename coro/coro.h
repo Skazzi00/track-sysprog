@@ -1,6 +1,8 @@
-
 #ifndef TRACK_SYSPROG_CORO_CORO_H_
 #define TRACK_SYSPROG_CORO_CORO_H_
+
+#include <ucontext.h>
+#include <stdint.h>
 
 #define stack_size 1024 * 1024
 
